@@ -13,8 +13,12 @@ const Cart = (props) => {
             <h5>Total selected : {totalQuantity}</h5>
             <p>Gross salary : {total}</p>
             {
-                cart.map(c => <h5 ><i class="fas fa-check"></i> {c.name}</h5>) 
+                cart.map(c => <h5>
+                <i class="fas fa-check"></i> 
+                {c.name} 
+                </h5>) 
             }
+            <i class="fas fa-cart-arrow-down"> <span>{cart}</span></i>
         </div>
     );
 }
